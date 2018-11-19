@@ -1,0 +1,16 @@
+.searchform{
+	width: 40%;
+}
+
+.searchinput{
+	background: #6633990f !important;
+}
+
+.searchinput::placeholder{
+	text-align: center;
+	color:  #663399;
+}
+
+.searchinput[type=text]{
+	text-align: center !important;
+}

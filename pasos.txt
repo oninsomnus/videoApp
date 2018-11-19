@@ -1,0 +1,62 @@
+1. install npm, node
+
+2. en la consola:
+create-react-app nombreDelProyecto
+
+3. cd nombreDelProyecto
+
+4. npm start (esto crea un localhost)
+
+5. copiar archivos webpack.dev.config.js y webpack.config.js
+Cambiar las  rutas del output del archivo compilado por babel
+
+6. npm init (nombre del archivo solo letras)
+
+7. package.json agregar dependencias de babel, webpack en el código
+
+8. npm install >> instala las dependencias del código json
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "clean-webpack-plugin": "0.1.17",
+    "css-loader": "0.28.7",
+    "extract-text-webpack-plugin": "3.0.2",
+    "file-loader": "1.1.5",
+    "style-loader": "0.19.0",
+    "url-loader": "0.6.2",
+    "webpack": "3.8.1",
+    "webpack-dev-server": "2.9.3"
+
+9.agregar los scripts en el package json 
+"scripts": {
+    "eject": "react-scripts eject",
+    "build:dev": "webpack-dev-server --config ./webpack.dev.config.js",
+    "build:local": "webpack --env.NODE_ENV=local",
+    "build:prod": "webpack -p --env.NODE_ENV=production"
+  },
+
+10. correr el script que compila con babel
+npm run build:prod
+
+11. instalar las dependencias de react
+npm install react react-dom --save-dev
+
+React: sirve para crear los componentes
+ReactDOM: sirve para renderizar los componentes en el navegador
+
+Sintaxis>>>>>>
+ReactDOM.render(que voy a renderizar, donde lo hare);
+
+12. npm run build:dev te crea un localhost
+cambiar el src de react en index.html>>>>>
+http://localhost:9000/js/platziapp.js
+
+
+
+this.props.author>>>>>>
+propiedades que llama el componente en algun elemento del html con respecto a su render
+
+<Media author="Juan"/>
+this.props.author = Juan

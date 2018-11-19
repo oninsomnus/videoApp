@@ -1,0 +1,23 @@
+.Media{
+	cursor: pointer;
+	margin-right: 15px;
+	display: inline-block;
+	width: 260px;
+	vertical-align: top;
+}
+
+.mediaImage{
+	object-fit: cover;
+}
+
+.titulo{
+	color: white;
+	text-align: center;
+	margin-top: 0;
+	font-size: 20px;
+}
+
+p{
+	text-align: center;
+	font-weight: 600;
+}
